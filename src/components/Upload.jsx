@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Upload() {
   const [file, setFile] = useState(null);
   const [folders, setFolders] = useState([]);
   const [selectedFolderId, setSelectedFolderId] = useState("");
   const [newFolderName, setNewFolderName] = useState("");
-
+  const navigate = useNavigate();
   
   useEffect(() => {
     const fetchFolders = async () => {
@@ -66,6 +67,7 @@ export default function Upload() {
     if (res.ok) {
       console.log("Upload success");
       setFile(null);
+      navigate("/Dashboard");
     } else {
       console.log("Upload failed");
     }
