@@ -14,7 +14,7 @@ export default function Login() {
     formData.append("password", password);
 
     try {
-      const res = await fetch("http://localhost:3000/login", {
+      const res = await fetch("http://filenest-production-9bb3.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",

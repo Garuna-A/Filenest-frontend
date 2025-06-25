@@ -9,7 +9,7 @@ export default function Upload() {
   
   useEffect(() => {
     const fetchFolders = async () => {
-      const res = await fetch("http://localhost:3000/folder-list", {
+      const res = await fetch("http://filenest-production-9bb3.up.railway.app/folder-list", {
         credentials: "include",
         headers: { Accept: "application/json" },
       });
@@ -26,7 +26,7 @@ export default function Upload() {
     e.preventDefault();
     if (!newFolderName) return;
 
-    const res = await fetch("http://localhost:3000/folder", {
+    const res = await fetch("http://filenest-production-9bb3.up.railway.app/folder", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -57,7 +57,7 @@ export default function Upload() {
       formData.append("folderId", selectedFolderId);
     }
 
-    const res = await fetch("http://localhost:3000/upload", {
+    const res = await fetch("http://filenest-production-9bb3.up.railway.app/upload", {
       method: "POST",
       body: formData,
       credentials: "include",
