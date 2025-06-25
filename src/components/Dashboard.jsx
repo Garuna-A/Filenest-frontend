@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://filenest-production-9bb3.up.railway.app/dashboard", {
+      const res = await fetch("https://filenest-production-9bb3.up.railway.app/dashboard", {
         credentials: "include",
         headers :{
           Accept: "application/json",
@@ -32,7 +32,7 @@ const Dashboard = () => {
 
   const handleDelete = async (fileId) => {
     try {
-      const res = await fetch("http://filenest-production-9bb3.up.railway.app/delete-file", {
+      const res = await fetch("https://filenest-production-9bb3.up.railway.app/delete-file", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -5,7 +5,7 @@ export default function Signup() {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    const res = await fetch("http://filenest-production-9bb3.up.railway.app/sign-up",{
+    const res = await fetch("https://filenest-production-9bb3.up.railway.app/sign-up",{
         method:'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(form), 
