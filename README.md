@@ -4,6 +4,11 @@ This is the frontend for **Filenest**, a full-stack file uploader web applicatio
 
 ## 🚀 Live Demo
 
+
+**Demo Credentials**:
+- **Username**: `test`
+- **Password**: `1234`
+
 🔗 [FileNest](https://filenest-nine.vercel.app/)
 
 ![Files Dashboard](https://github.com/Garuna-A/Filenest-frontend/blob/main/src/assets/Screenshot_26-6-2025_114539_filenest-nine.vercel.app.jpeg)
