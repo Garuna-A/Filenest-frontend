@@ -1,12 +1,31 @@
-# React + Vite
+# Filenest Frontend – React UI for File Upload
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for **Filenest**, a full-stack file uploader web application. It allows users to upload files through a simple and responsive React interface, which communicates with the backend API.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [FileNest](https://filenest-nine.vercel.app/)
 
-## Expanding the ESLint configuration
+![Files Dashboard](https://github.com/Garuna-A/Filenest-frontend/blob/main/src/assets/Screenshot_26-6-2025_114539_filenest-nine.vercel.app.jpeg)
+![Upload Page](https://github.com/Garuna-A/Filenest-frontend/blob/main/src/assets/Screenshot_26-6-2025_11462_filenest-nine.vercel.app.jpeg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Features
+
+- Upload files via a clean React frontend
+- Store uploaded files on the server with unique filenames (using Multer)
+- View uploaded files
+- Store file metadata using PostgreSQL and Prisma ORM
+- Full-stack architecture with a separate frontend and backend
+
+## 🛠 Tech Stack
+
+- **Frontend**: React, HTML, CSS
+- **Backend**: Node.js, Express, Multer, Prisma
+- **Database**: PostgreSQL
+- **Deployment**: Vercel
+
+
+## 🔗 Repositories
+
+- **Frontend Repo**: [filenest-frontend](https://github.com/Garuna-A/filenest-frontend)
+- **Backend Repo**: [filenest-backend](https://github.com/Garuna-A/filenest-backend)
